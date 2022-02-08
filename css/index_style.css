@@ -14,7 +14,9 @@
   --card-bg: #14253d;
   --line: #2f415b;
 }
-
+main {
+  min-height: 100vh;
+}
 p {
   font-size: 1rem;
 }
@@ -36,7 +38,6 @@ span {
 h1:hover,
 span:hover {
   color: var(--primary-color) !important;
-  cursor: pointer;
 }
 .break-line {
   position: relative;
@@ -55,6 +56,9 @@ span:hover {
   border: 1px solid white;
   border-radius: 50%;
 }
+.avatar-container {
+  width: 10%;
+}
 .layer {
   opacity: 0;
   background-color: rgba(0, 255, 247, 0.6) !important;
@@ -71,10 +75,8 @@ span:hover {
 }
 .card-container {
   background-color: var(--card-bg);
+  max-width: 350px;
 }
 
-@media (min-width: 375px) and (max-width: 1440px) {
-  .card-container {
-    width: 350px;
-  }
-}
+  
+
